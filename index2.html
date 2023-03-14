@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="upper_part">
+            <div id="modal_name">Format cells</div>
+            <div class="modal_btn title-bar-controls">
+              <button aria-label="Help"></button>
+              <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="lower_part">
+            <section class="tabs">
+                <menu role="tablist" aria-label="Sample Tabs">
+                  <button role="tab"  aria-controls="tab-A">Number</button>
+                  <button role="tab"  aria-controls="tab-B">Alignmet</button>
+                  <button role="tab" aria-selected="true" aria-controls="tab-C">Font</button>
+                  <button role="tab" aria-controls="tab-C">Border</button>
+                  <button role="tab" aria-controls="tab-C">Patterns</button>
+                  <button role="tab" aria-controls="tab-C">Protection</button>
+                </menu>
+                <!-- the tab content -->
+                <article role="tabpanel" id="tab-A">
+                  <div class="inner_cont">
+                    <div class="options" id="font_opts">
+                      <div class="opts">
+                        <div class="field-row input_field">
+                          <label class="opts_txt" for="text21">Font:</label>
+                          <input id="text21" type="text" />
+                        </div>
+                      </div>
+                      <div class="opts">
+                        <div class="field-row input_field">
+                          <label class="opts_txt" for="text21">Font Style:</label>
+                          <input id="text21" type="text" />
+                        </div>
+                      </div>
+                      <div class="opts">
+                        <div class="field-row input_field">
+                          <label class="opts_txt" for="text21">Size:</label>
+                          <input id="text21" type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="options" id="txt_decor">
+                      <div class="txt_decor_opt1">
+                        <span>Underline:</span>
+                        <select>
+                          <option>None</option>
+                          <option>4 - Great!</option>
+                          <option>3 - Pretty good</option>
+                          <option>2 - Not so great</option>
+                          <option>1 - Unfortunate</option>
+                        </select>
+                      </div>
+                      <div class="txt_decor_opt2">
+                        <span>Font style:</span>
+                        <select>
+                          <option>Automatic</option>
+                          <option>4 - Great!</option>
+                          <option>3 - Pretty good</option>
+                          <option>2 - Not so great</option>
+                          <option>1 - Unfortunate</option>
+                        </select>
+                      </div>
+                  
+                        <div class="field-row">
+                          <input checked type="checkbox" id="example2">
+                          <label for="example2">Normal Font</label>
+                        </div>
+                    
+                    </div>
+                    <div class="options">
+                      <div class="effects_preview">
+                        <fieldset id="effects_fielset">
+                          <legend>Effects</legend>
+                          <div class="field-row">
+                            <input id="radio10" type="checkbox" name="fieldset-example2">
+                            <label for="radio10">Strikethrough</label>
+                          </div>
+                          <div class="field-row">
+                            <input id="radio11" type="checkbox" name="fieldset-example2">
+                            <label for="radio11">Superscript</label>
+                          </div>
+                          <div class="field-row">
+                            <input id="radio12" type="checkbox" name="fieldset-example2">
+                            <label for="radio12">Subscript</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="effects_preview" id="preview_cont">
+                        <fieldset id="preview_fielset">
+                          <legend>Preview</legend>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="options">
+                      <p>This is a TrueType font.  The same font will be used on both your printer and your screen</p>
+                    </div>
+                  </div>
+                </article>
+                <div class="footer_btn">
+                  <button>Ok</button>
+                  <button>Cancel</button>
+                </div>
+              </section>
+        </div>
+    </div>
+</body>
+</html>
