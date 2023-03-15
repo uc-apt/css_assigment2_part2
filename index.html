@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
-    <link rel="stylesheet" href="style2.css" />
+    <link href="//db.onlinewebfonts.com/c/794e572cce05ab25cdc31a0d3368c829?family=MrEavesXLModNarOT-Heavy" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" >
+    <link rel="stylesheet" href="style2.css" >
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="upper_part">
-            <div id="modal_name">Format cells</div>
+            <div id="modal_name">
+              <p style="margin:0px 0px">Format cells</p>
+            </div>
             <div class="modal_btn title-bar-controls">
               <button aria-label="Help"></button>
               <button aria-label="Close"></button>
@@ -19,7 +23,7 @@
         </div>
         <div class="lower_part">
             <section class="tabs">
-                <menu role="tablist" aria-label="Sample Tabs">
+                <menu role="tablist" aria-label="Sample Tabs" >
                   <button role="tab"  aria-controls="tab-A">Number</button>
                   <button role="tab"  aria-controls="tab-B">Alignmet</button>
                   <button role="tab" aria-selected="true" aria-controls="tab-C">Font</button>
@@ -31,27 +35,53 @@
                 <article role="tabpanel" id="tab-A">
                   <div class="inner_cont">
                     <div class="options" id="font_opts">
-                      <div class="opts">
+                      <div class="opts" style="flex-basis: 190px;">
                         <div class="field-row input_field">
                           <label class="opts_txt" for="text21">Font:</label>
-                          <input id="text21" type="text" />
+                          <input id="text21" type="text">
+                          <select multiple name="select1" id="font1">
+                            <option class="fontStyleOps" value="Tw Cen MT" class="ops"> <img src="font.png" alt="font"> Tw Cen MT</option>
+                            <option class="fontStyleOps" value="Tw Cen MT Condensed" class="ops">Tw Cen MT Condensed</option>
+                            <option class="fontStyleOps" value="Tw Cen MT Condensed 2" class="ops">Tw Cen MT Condensed 2</option>
+                            <option class="fontStyleOps" value="Verdana" class="ops">Verdana</option>
+                            <option class="fontStyleOps" value="Sans Seriff" class="ops">Sans Seriff</option>
+                            <option class="fontStyleOps" value="Cons" class="ops">Cons</option>
+                          </select>
                         </div>
                       </div>
                       <div class="opts">
                         <div class="field-row input_field">
-                          <label class="opts_txt" for="text21">Font Style:</label>
-                          <input id="text21" type="text" />
+                          <label class="opts_txt" for="text22">Font Style:</label>
+                          <input id="text22" type="text" >
+                          <select multiple name="select2" id="font2">
+                            <option  class="fontTypeOps" value="Regular" class="ops">Regular</option>
+                            <option class="fontTypeOps" value="Italic" class="ops">Italic</option>
+                            <option class="fontTypeOps" value="Bold" class="ops">Bold</option>
+                            <option class="fontTypeOps" value="Medium Bold" class="ops">Medium Bold</option>
+                            <option class="fontTypeOps" value="Bold Italic" class="ops">Bold Italic</option>
+                            <option class="fontTypeOps" value="Special" class="ops">Special</option>
+                          </select>
                         </div>
                       </div>
                       <div class="opts">
                         <div class="field-row input_field">
-                          <label class="opts_txt" for="text21">Size:</label>
-                          <input id="text21" type="text" />
+                          <label class="opts_txt" for="text23">Size:</label>
+                          <input id="text23" type="text" >
+                          <select multiple name="select3" id="font3">
+                            <option  class="fontSizeOps" value="8" class="ops">8</option>
+                            <option class="fontSizeOps" value="9" class="ops">9</option>
+                            <option class="fontSizeOps" value="10" class="ops">10</option>
+                            <option class="fontSizeOps" value="11" class="ops">11</option>
+                            <option class="fontSizeOps" value="12" class="ops">12</option>
+                            <option class="fontSizeOps" value="13" class="ops">13</option>
+                            <option class="fontSizeOps" value="14" class="ops">14</option>
+                            <option class="fontSizeOps" value="15" class="ops">15</option>
+                          </select>
                         </div>
                       </div>
                     </div>
                     <div class="options" id="txt_decor">
-                      <div class="txt_decor_opt1">
+                      <div class="txt_decor_opt1" style="flex-basis: 170px;">
                         <span>Underline:</span>
                         <select>
                           <option>None</option>
@@ -74,12 +104,12 @@
                   
                         <div class="field-row">
                           <input checked type="checkbox" id="example2">
-                          <label for="example2">Normal Font</label>
+                          <label for="example2">Normal font</label>
                         </div>
                     
                     </div>
-                    <div class="options">
-                      <div class="effects_preview">
+                    <div class="options" style="margin-top: 6px;">
+                      <div class="effects_preview" style="flex-basis: 170px;">
                         <fieldset id="effects_fielset">
                           <legend>Effects</legend>
                           <div class="field-row">
@@ -97,22 +127,52 @@
                         </fieldset>
                       </div>
                       <div class="effects_preview" id="preview_cont">
-                        <fieldset id="preview_fielset">
+                        <fieldset id="preview_fielset" style="    padding: 0px 0px;">
                           <legend>Preview</legend>
+                          <div style="display: flex;justify-content: space-between; align-items: center;margin-top: 16px;font-weight: 500;">
+                            <div>____</div><div>AaBbYyZz</div><div>____</div>
+
+                          </div>
                         </fieldset>
                       </div>
                     </div>
-                    <div class="options">
+                    <div class="options" style="margin-top: 10px;">
                       <p>This is a TrueType font.  The same font will be used on both your printer and your screen</p>
                     </div>
                   </div>
                 </article>
                 <div class="footer_btn">
-                  <button>Ok</button>
+                  <button autofocus>Ok</button>
                   <button>Cancel</button>
                 </div>
               </section>
         </div>
     </div>
+    <script>
+      const fontStyleOps = document.getElementsByClassName('fontStyleOps')
+      const fontTypeOps = document.getElementsByClassName('fontTypeOps')
+      const fontSizeOps = document.getElementsByClassName('fontSizeOps')
+      for(let op of fontStyleOps){
+        op.addEventListener("click",update1)
+      }
+      for(let op of fontTypeOps){
+        op.addEventListener("click",update2)
+      }
+      for(let op of fontSizeOps){
+        op.addEventListener("click",update3)
+      }
+      function update1(e){
+        console.log(e.target.value)
+        document.getElementById('text21').value = e.target.value
+      }
+      function update2(e){
+        console.log(e.target.value)
+        document.getElementById('text22').value = e.target.value
+      }
+      function update3(e){
+        console.log(e.target.value)
+        document.getElementById('text23').value = e.target.value
+      }
+    </script>
 </body>
 </html>
