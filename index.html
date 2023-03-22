@@ -26,7 +26,7 @@
                 <menu role="tablist" aria-label="Sample Tabs" >
                   <button role="tab"  aria-controls="tab-A">Number</button>
                   <button role="tab"  aria-controls="tab-B">Alignmet</button>
-                  <button role="tab" aria-selected="true" aria-controls="tab-C">Font</button>
+                  <button  role="tab" aria-selected="true" aria-controls="tab-C">Font </button>
                   <button role="tab" aria-controls="tab-C">Border</button>
                   <button role="tab" aria-controls="tab-C">Patterns</button>
                   <button role="tab" aria-controls="tab-C">Protection</button>
@@ -37,45 +37,45 @@
                     <div class="options" id="font_opts">
                       <div class="opts" style="flex-basis: 190px;">
                         <div class="field-row input_field">
-                          <label class="opts_txt" for="text21">Font:</label>
-                          <input id="text21" type="text">
+                          <label id="opts_Font" for="text21"> <span class="underLnCB">F</span> ont:</label>
+                          <input value="Verdana" id="text21" type="text">
                           <select multiple name="select1" id="font1">
-                            <option class="fontStyleOps" value="Tw Cen MT" class="ops"> <img src="font.png" alt="font"> Tw Cen MT</option>
-                            <option class="fontStyleOps" value="Tw Cen MT Condensed" class="ops">Tw Cen MT Condensed</option>
-                            <option class="fontStyleOps" value="Tw Cen MT Condensed 2" class="ops">Tw Cen MT Condensed 2</option>
-                            <option class="fontStyleOps" value="Verdana" class="ops">Verdana</option>
-                            <option class="fontStyleOps" value="Sans Seriff" class="ops">Sans Seriff</option>
-                            <option class="fontStyleOps" value="Cons" class="ops">Cons</option>
+                            <option class="fontStyleOps ops" value="Tw Cen MT" > <img src="font.png" alt="font"> Tw Cen MT</option>
+                            <option class="fontStyleOps ops" value="Tw Cen MT Condensed" >Tw Cen MT Condensed</option>
+                            <option id="optSlct1"  class="fontStyleOps ops" value="Verdana" >Verdana</option>
+                            <option class="fontStyleOps ops" value="Tw Cen MT Condensed 2" >Tw Cen MT Condensed 2</option>
+                            <option class="fontStyleOps ops" value="Sans Seriff" >Sans Seriff</option>
+                            <option class="fontStyleOps ops" value="Cons" >Cons</option>
                           </select>
                         </div>
                       </div>
                       <div class="opts">
                         <div class="field-row input_field">
-                          <label class="opts_txt" for="text22">Font Style:</label>
-                          <input id="text22" type="text" >
+                          <label id="opts_Font_Style" for="text22">F <span class="underLnCB">o</span> nt Style:</label>
+                          <input value="Regular" id="text22" type="text" >
                           <select multiple name="select2" id="font2">
-                            <option  class="fontTypeOps" value="Regular" class="ops">Regular</option>
-                            <option class="fontTypeOps" value="Italic" class="ops">Italic</option>
-                            <option class="fontTypeOps" value="Bold" class="ops">Bold</option>
-                            <option class="fontTypeOps" value="Medium Bold" class="ops">Medium Bold</option>
-                            <option class="fontTypeOps" value="Bold Italic" class="ops">Bold Italic</option>
-                            <option class="fontTypeOps" value="Special" class="ops">Special</option>
+                            <option id="optSlct2"  class="fontTypeOps ops" value="Regular">Regular</option>
+                            <option class="fontTypeOps ops" value="Italic">Italic</option>
+                            <option class="fontTypeOps ops" value="Bold">Bold</option>
+                            <option class="fontTypeOps ops" value="Medium Bold">Medium Bold</option>
+                            <option class="fontTypeOps ops" value="Bold Italic">Bold Italic</option>
+                            <option class="fontTypeOps ops" value="Special" >Special</option>
                           </select>
                         </div>
                       </div>
                       <div class="opts">
                         <div class="field-row input_field">
-                          <label class="opts_txt" for="text23">Size:</label>
-                          <input id="text23" type="text" >
+                          <label id="opts_size" for="text23"> <span class="underLnCB">S</span> ize:</label>
+                          <input value="10" id="text23" type="text" >
                           <select multiple name="select3" id="font3">
-                            <option  class="fontSizeOps" value="8" class="ops">8</option>
-                            <option class="fontSizeOps" value="9" class="ops">9</option>
-                            <option class="fontSizeOps" value="10" class="ops">10</option>
-                            <option class="fontSizeOps" value="11" class="ops">11</option>
-                            <option class="fontSizeOps" value="12" class="ops">12</option>
-                            <option class="fontSizeOps" value="13" class="ops">13</option>
-                            <option class="fontSizeOps" value="14" class="ops">14</option>
-                            <option class="fontSizeOps" value="15" class="ops">15</option>
+                            <option  class="fontSizeOps" value="8" >8</option>
+                            <option class="fontSizeOps Ops" value="9" >9</option>
+                            <option id="optSlct3" class="fontSizeOps Ops" value="10" >10</option>
+                            <option class="fontSizeOps Ops" value="11" >11</option>
+                            <option class="fontSizeOps Ops" value="12" >12</option>
+                            <option class="fontSizeOps Ops" value="13" >13</option>
+                            <option class="fontSizeOps Ops" value="14" >14</option>
+                            <option class="fontSizeOps Ops" value="15" >15</option>
                           </select>
                         </div>
                       </div>
@@ -114,22 +114,30 @@
                           <legend>Effects</legend>
                           <div class="field-row">
                             <input id="radio10" type="checkbox" name="fieldset-example2">
-                            <label for="radio10">Strikethrough</label>
+                            <label for="radio10">Stri<span class="underLnCB">k</span>ethrough</label>
                           </div>
                           <div class="field-row">
                             <input id="radio11" type="checkbox" name="fieldset-example2">
-                            <label for="radio11">Superscript</label>
+                            <label for="radio11">Sup <span class="underLnCB">e</span> rscript</label>
                           </div>
                           <div class="field-row">
                             <input id="radio12" type="checkbox" name="fieldset-example2">
-                            <label for="radio12">Subscript</label>
+                            <label for="radio12">Su <span class="underLnCB">b</span> script</label>
                           </div>
                         </fieldset>
                       </div>
                       <div class="effects_preview" id="preview_cont">
                         <fieldset id="preview_fielset" style="    padding: 0px 0px;">
                           <legend>Preview</legend>
-                          <div style="display: flex;justify-content: space-between; align-items: center;margin-top: 16px;font-weight: 500;">
+                          <div style="    display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                          /* margin-top: 16px; */
+                          font-weight: 500;
+                          height: 54px;
+                          width: 190px;
+                          margin: auto;
+                          border: 1px solid black;">
                             <div>____</div><div>AaBbYyZz</div><div>____</div>
 
                           </div>
@@ -141,17 +149,24 @@
                     </div>
                   </div>
                 </article>
-                <div class="footer_btn">
+                <div class=" footer_btn" >
                   <button autofocus>Ok</button>
-                  <button>Cancel</button>
+                  <div class="close_btn_txt_area">
+                    <button >Cancel</button>
+                  </div>
                 </div>
               </section>
         </div>
     </div>
     <script>
+      window.addEventListener('load',function(){
+        document.getElementById('optSlct1').click()
+      })
+
       const fontStyleOps = document.getElementsByClassName('fontStyleOps')
       const fontTypeOps = document.getElementsByClassName('fontTypeOps')
       const fontSizeOps = document.getElementsByClassName('fontSizeOps')
+
       for(let op of fontStyleOps){
         op.addEventListener("click",update1)
       }
@@ -161,18 +176,35 @@
       for(let op of fontSizeOps){
         op.addEventListener("click",update3)
       }
+      var prevUp1 = document.getElementById('optSlct1')
+      prevUp1.classList.toggle('selected')
       function update1(e){
-        console.log(e.target.value)
+        prevUp1.classList.toggle('selected');
+        console.log(e.target.classList)
+        e.target.classList.toggle('selected')
         document.getElementById('text21').value = e.target.value
+        prevUp1 = e.target
+        
       }
+      var prevUp2 = document.getElementById('optSlct2')
+      prevUp2.classList.toggle('selected')
       function update2(e){
+        prevUp2.classList.toggle('selected');
         console.log(e.target.value)
+        e.target.classList.toggle('selected')
         document.getElementById('text22').value = e.target.value
+        prevUp2 = e.target
       }
+      var prevUp3 = document.getElementById('optSlct3')
+      prevUp3.classList.toggle('selected')
       function update3(e){
+        prevUp3.classList.toggle('selected');
         console.log(e.target.value)
+        e.target.classList.toggle('selected')
         document.getElementById('text23').value = e.target.value
+        prevUp3 = e.target
       }
+
     </script>
 </body>
 </html>
