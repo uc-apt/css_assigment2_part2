@@ -12,7 +12,7 @@ body{
     justify-content: space-between;
     background-color: #005BF2;
     width: 420px;
-    height: 400px;
+    height: 390px;
     margin: auto;
     margin-top: 50px;
     padding: 4px 4px;
@@ -20,6 +20,11 @@ body{
 }
 
 .upper_part {
+    width: 415px;
+    /* margin-bottom: 1px; */
+    margin-left: 3px;
+    margin-bottom: 1px;
+    /* margin: auto; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,6 +109,9 @@ body{
 .footer_btn{
     float: right;
     margin-top: 5px;
+    display: flex;
+    width: 160px;
+    justify-content: space-between;
 }
 
 #font1{
@@ -124,7 +132,6 @@ body{
 }
 #modal_name{
     font-family:  "MrEavesXLModNarOT";
-    font-size: bold;
     font-size: 15px;
     display: flex;
     flex-direction: column;
@@ -151,4 +158,35 @@ body{
 
 #text23{
     width: 74px;
+}
+.underLnCB{
+    text-decoration: underline;
+}
+
+#opts_Font{
+    margin-right: 134px;
+    margin-bottom: 1px;
+}
+
+#opts_Font_Style{
+    margin-right: 49px;
+    margin-bottom: 1px;
+}
+
+#opts_size{
+    margin-right: 45px;
+    margin-bottom: 1px;
+}
+
+.close_btn_txt_area{
+    border: 1px solid #80c2ff;
+    border-radius: 1px;
+}
+
+.selected{
+    background-color: #1E90FF;
+}
+
+select{
+    padding: 0px 1px;
 }
