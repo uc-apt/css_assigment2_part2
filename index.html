@@ -26,7 +26,7 @@
                 <menu role="tablist" aria-label="Sample Tabs" >
                   <button role="tab"  aria-controls="tab-A">Number</button>
                   <button role="tab"  aria-controls="tab-B">Alignmet</button>
-                  <button  role="tab" aria-selected="true" aria-controls="tab-C">Font </button>
+                  <button autofocus role="tab" aria-selected="true" aria-controls="tab-C">Font </button>
                   <button role="tab" aria-controls="tab-C">Border</button>
                   <button role="tab" aria-controls="tab-C">Patterns</button>
                   <button role="tab" aria-controls="tab-C">Protection</button>
@@ -112,15 +112,15 @@
                       <div class="effects_preview" style="flex-basis: 170px;">
                         <fieldset id="effects_fielset">
                           <legend>Effects</legend>
-                          <div class="field-row">
+                          <div class="field-row" style="margin-left: 4px;">
                             <input id="radio10" type="checkbox" name="fieldset-example2">
                             <label for="radio10">Stri<span class="underLnCB">k</span>ethrough</label>
                           </div>
-                          <div class="field-row">
+                          <div class="field-row" style="margin-left: 4px;">
                             <input id="radio11" type="checkbox" name="fieldset-example2">
                             <label for="radio11">Sup <span class="underLnCB">e</span> rscript</label>
                           </div>
-                          <div class="field-row">
+                          <div class="field-row" style="margin-left: 4px;">
                             <input id="radio12" type="checkbox" name="fieldset-example2">
                             <label for="radio12">Su <span class="underLnCB">b</span> script</label>
                           </div>
@@ -150,7 +150,7 @@
                   </div>
                 </article>
                 <div class=" footer_btn" >
-                  <button autofocus>Ok</button>
+                    <button class="okBtn">Ok</button>
                   <div class="close_btn_txt_area">
                     <button >Cancel</button>
                   </div>
