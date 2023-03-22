@@ -38,7 +38,7 @@ body{
     min-height: 25px;
 }
 .lower_part{
-    padding: 10px 5px;
+    padding: 10px 4px;
     background-color: #ECE9D8;
     height: 94%;
 
@@ -185,8 +185,14 @@ body{
 
 .selected{
     background-color: #1E90FF;
+    color: white;
 }
 
 select{
     padding: 0px 1px;
 }
+
+.okBtn{
+    border: 3px solid rgba(33, 150, 243, 0.6);
+    
+  }
